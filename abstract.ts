@@ -16,11 +16,11 @@ abstract class Figure {
 class Rectangle extends Figure{
     //x: number;
     //y: number;
-     
+
     constructor(public x: number, public y: number, public width: number, public height: number){ 
         super();
     }
-     
+
     getArea(): void{
         let square = this.width * this.height;
         console.log("area =", square);
