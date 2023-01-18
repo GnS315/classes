@@ -59,7 +59,7 @@ class Human {
     calculateBMI() {
         return this.weight/this.height**2
     }
-    // Статический метод для расчета индекса массы тела. Он является методом всего класса а не отдельного экземпляра
+    // Статический метод для расчета индекса массы тела. Он является методом всего класса, а не отдельного экземпляра
     static calculateBMIStatic(weight, height) {
         return weight/height**2
     }
