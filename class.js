@@ -46,11 +46,11 @@ class Human {
         this._weight = value
     }
     // Метод для расчета ИМТ. Является методом отдельного экземпляра класса.
-    calculate() {
+    calculateBMI() {
         return this.weight/this.height**2
     }
     // Статический метод для расчета индекса массы тела. Он является методом всего класса а не отдельного экземпляра
-    static calculateBMI(weight, height) {
+    static calculateBMIStatic(weight, height) {
         return weight/height**2
     }
 
