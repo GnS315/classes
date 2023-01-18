@@ -12,8 +12,8 @@
 * */
 
 class Human {
-    order = 'primates' //Свойство: отряд - приматы
-    static humanClass = 'mammals' //Статическое свойство: класс - млекопитающие
+    order = 'primates' //Свойство: отряд - приматы, свойство экземпляра класса
+    static humanClass = 'mammals' //Статическое свойство: класс - млекопитающие, свойство самого класса, а не эклемпляра
 
     // Конструктор, где объявляем имя, рост, вес
     constructor(name, height,weight) {
@@ -64,6 +64,3 @@ class Employee extends Human {
         super(...args); // Вызываем super для наследования конструктора родительского класса и передаем аргументы
     }
 }
-
-const programmer = new Employee('Олег', 190, 39)
-console.log(programmer)
