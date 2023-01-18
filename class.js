@@ -73,6 +73,7 @@ class Human {
 /*
 * Создаем класс Работник, унаследованный от класса Человек
 * */
+
 class Employee extends Human {
     constructor(name, height, weight, salary) { //Конструктор
         super(name, height,weight) // Вызываем родительский конструктор
