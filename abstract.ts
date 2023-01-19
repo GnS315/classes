@@ -13,6 +13,7 @@ abstract class Figure {
     abstract y: number;
     abstract getArea(): void;
 }
+
 class Rectangle extends Figure{
     //x: number;
     //y: number;
