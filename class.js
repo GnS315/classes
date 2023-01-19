@@ -98,7 +98,7 @@ class Human {
 Object.assign(Human.prototype, sayHi); //Копируем методы
 new Human('Vasia').say('Привет') // Я говорю Привет
 
-const human1 = new Human('ivan', 12, 13)
+const human1 = new Human('ivan', 180, 70)
 human1.weight = 10 // Cannot set property weight of #<Human> which has only a getter
 console.log(human1.weight) // По итогу мы не смогли поменять вес, потому что существует только геттер
 
@@ -112,12 +112,12 @@ class Employee extends Human {
         super(name, height, weight) // Вызываем родительский конструктор
         this.salary = salary
     }
-
+    // Переопределяем методы
     walk(c, d) {
         console.log(`Работник идет со скоростью ${c} км/ч, ${d} минут`)
     }
 
-    run() { // Переопределяем метод
+    run() {
         console.log(`Я работник ${this.name}, и я бегу`)
     }
 }
@@ -131,9 +131,8 @@ employee2.walk(10,10) // Работник идет со скоростью 10 к
 human2.run() // Я человек Ivan, и я бегу
 employee2.run() // Я работник Vasili, и я бегу
 
-/*
-* JavaScript не поддерживает перегрузку. Но можно использовать arguments.length
-* */
+
+ // JavaScript не поддерживает перегрузку. Но можно использовать arguments.length
 
 function overload() {
     if (arguments.length === 1) {
