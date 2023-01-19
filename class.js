@@ -135,8 +135,7 @@ employee2.walk(10,10) // Работник идет со скоростью 10 к
 human2.run() // Я человек Ivan, и я бегу
 employee2.run() // Я работник Vasili, и я бегу
 
-
- // JavaScript не поддерживает перегрузку. Но можно использовать arguments.length
+// JavaScript не поддерживает перегрузку. Но можно использовать arguments.length
 
 function overload() {
     if (arguments.length === 1) {
