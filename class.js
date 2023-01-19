@@ -100,7 +100,7 @@ class Human {
 }
 
 Object.assign(Human.prototype, sayHi); //Копируем методы
-new Human('Vasia').say('Привет') // Я говорю Привет
+new Human('Vasia').say('Привет') // Я говорю 'Привет'
 
 const human1 = new Human('ivan', 180, 70)
 human1.weight = 10 // Cannot set property weight of #<Human> which has only a getter
